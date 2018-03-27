@@ -18,17 +18,6 @@ export class UsersComponent implements OnInit {
 
   resetUserName() {
     this.userName = "";
-    this.disableButton = false;
-  }
-
-  onUpdateUserName(event: any) {
-    this.userName = (<HTMLInputElement>event.target).value;
-
-    if(this.userName) {
-      this.disableButton = true;
-    } else {
-      this.disableButton = false;
-    }
   }
 
 }

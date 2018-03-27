@@ -8,7 +8,7 @@
     [(ngModel)]="userName" 
     (input)="onUpdateUserName($event)">
 <br />
-<button [disabled]="!disableButton" class="btn btn-primary" (click)="resetUserName()">Reset Username</button>
+<button [disabled]="userName === ''" class="btn btn-primary" (click)="resetUserName()">Reset Username</button>
 
 <br /><br />
 <p>Your username is: {{ userName }}</p>
